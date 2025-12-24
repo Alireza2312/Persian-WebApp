@@ -64,10 +64,6 @@ body {
     box-shadow: 0 0 5px rgb(255, 0, 251);
 }
 
-.mobile input:focus+div {
-    display: inline-block;
-}
-
 .mobile>div {
     display: none;
     position: relative;
@@ -78,6 +74,10 @@ body {
     border: 1px solid wheat;
     border-radius: 0.5em;
     font-size: 0.7em;
+}
+
+.mobile input:focus+div {
+    display: initial;
 }
 
 .login button {
