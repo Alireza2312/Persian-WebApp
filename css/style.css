@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+
+@font-face {
+    font-family: persian;
+    src: url(./fonts/IRANSans.woff2);
+}
+
+* {
+    font-family: persian;
+}
+
+.header {
+    background: linear-gradient(168deg, rgba(166, 38, 38, 1) 0%, rgba(9, 74, 121, 1) 66%);
+    color: rgb(200, 247, 29);
+    text-shadow: -5px 5px 6px rgb(185, 96, 0);
+    text-align: center;
+    padding: 0.9em;
+    font-size: 1.7em;
+}
+
+.login {
+    position: absolute;
+    left: 0;
+    transform: translate(3.5em, -6.5em);
+    color: white;
+    background: rgb(9, 74, 121);
+    border: 1px solid rgba(9, 74, 121, 1);
+    border-radius: 0 0 2.1em 2.1em;
+    padding: 1.1em;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+    padding: 0.1em;
+}
+
+.login a:hover {
+    color: rgba(0, 255, 0, 0.867);
+}
+
+.nav {
+    background: linear-gradient(334deg, rgba(166, 38, 38, 1) 0%, rgba(9, 74, 121, 1) 66%);
+    padding: 1em;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    min-width: 76px;
+    padding: 0.5em;
+    margin: 0 5.3%;
+    color: white;
+}
+
+#home:hover {
+    color: rgba(0, 255, 0, 0.867);
+}
+
+.menu>ul {
+    display: none;
+    min-width: 140px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(175, 169, 177);
+    border: 2px solid rgb(141, 56, 232);
+    line-height: 1.8em;
+    border-radius: 0.5em;
+}
+
+.menu:hover {
+    background-color: #ffffff3e;
+    border-radius: 0.5em;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.menu:hover>ul {
+    display: initial;
+    position: absolute;
+    right: -30px;
+    top: 2.6em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: #a93ffb;
+}
+
+.menu:last-of-type .menu {
+    margin: 0;
+    padding: 0 5px;
+    min-width: 140px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu:last-of-type .menu:hover {
+    color: yellow;
+}
+
+.menu:last-of-type .menu:hover>ul {
+    display: initial;
+    position: absolute;
+    top: 0.4em;
+    right: -150px;
+}
+
+.menu:last-of-type .menu:last-of-type ul {
+    line-height: 10px;
+}
+
+.content {
+    color: white;
+    text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77, 0, 38, 0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77, 0, 13, 0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77, 25, 0, 0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77, 66, 0, 0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64, 77, 0, 0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38, 77, 0, 0.5);
+    text-align: center;
+    padding: 1.95em;
+    font-size: 5em;
+}
+
+.content1 {
+    text-align: center;
+    height: 31.8vh;
+    padding-top: 12em;
+}
+
+.footer {
+    background: radial-gradient(circle, rgba(171, 75, 75, 1) 38%, rgba(9, 74, 121, 1) 98%);
+    text-align: center;
+    padding: 4.9em 0 3em 0;
+}

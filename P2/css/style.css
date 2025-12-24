@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background-color: lightgray
+}
+
+@font-face {
+    font-family: persian;
+    src: url(/css/fonts/IRANSans.woff2);
+}
+
+.banner {
+    position: relative;
+    color: #ff7700;
+    text-shadow: 7px 7px 2px #464645b3;
+    background: radial-gradient(circle, rgb(58, 130, 231) 27%, rgb(139, 62, 142) 100%);
+    padding: 1em 0;
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.right {
+    position: absolute;
+    top: -6px;
+    right: 60px;
+    width: 150px;
+    background-color: rgb(86, 138, 202);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.right a {
+    color: rgb(137, 35, 153);
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.right a:hover {
+    opacity: 0.6;
+}
+
+.header {
+    height: 50px;
+    background: radial-gradient(circle, rgb(24, 106, 220) 27%, rgb(88, 0, 92) 100%);
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    padding-left: 75px;
+    padding-right: 74px;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 2;
+    color: rgb(218, 229, 17);
+    border-right: 2px solid
+}
+
+.menu:last-of-type {
+    border: none;
+}
+
+.menu>ul {
+    display: none;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu:hover>ul {
+    display: initial;
+    position: absolute;
+    left: 70px;
+    top: 32px;
+}
+
+.menu:hover {
+    color: #bbafafb2;
+}
+
+.menu:last-of-type:hover>ul {
+    left: 28px
+}
+
+.border {
+    color: rgb(69, 65, 74);
+    background-color: rgb(142, 199, 192);
+    border: 2px solid rgb(14, 83, 136);
+    border-radius: 0.4em;
+}
+
+.border a {
+    color: rgb(219, 123, 55);
+    text-decoration: none;
+}
+
+.border>li {
+    text-align: left;
+    padding-left: 3px;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.menu:last-of-type .border>li {
+    text-align: right;
+    padding-right: 3px;
+}
+
+.submenu>ul {
+    display: none;
+    width: 130px;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu:hover>ul {
+    display: initial;
+    position: absolute;
+    left: 98px;
+    margin-top: 15px;
+}
+
+.submenu:hover {
+    color: beige;
+}
+
+.menu:last-of-type .submenu:hover>ul {
+    left: -105px;
+}
+
+.home {
+    font-family: persian;
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+.home a {
+    text-decoration: none;
+    color: #ffffff80;
+}
+
+.home a:hover {
+    color: white;
+}
